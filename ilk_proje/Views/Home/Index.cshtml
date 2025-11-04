@@ -21,5 +21,16 @@
             <br />
         }
     </div>
+    <div style="background-color:aliceblue">
+        @{
+            var list = new List<string>(){ "Ankara", "istanbul", "izmir" };
+
+        }
+        @foreach(var li in list)
+        {
+            @li;
+            <br />
+        }
+    </div>
 </body>
 </html>
