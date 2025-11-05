@@ -13,13 +13,16 @@ namespace ilk_proje.Controllers
         {
             return View();
         }
-        public int Index3() {
+        public int Index3()
+        {
 
             return 24;
-        }public string Index4()
+        }
+        public string Index4()
         {
             return "merhaba bugün hava çok soğuk";
-        }public IActionResult Index5()
+        }
+        public IActionResult Index5()
         {
             var ktp = new List<Kitap>()
             {
@@ -31,13 +34,27 @@ namespace ilk_proje.Controllers
 
             return View(ktp);
         }
-        public IActionResult Index6() {
+        public IActionResult Index6()
+        {
 
             ViewBag.deger1 = "merhaba .net core dersleri devam ediyor";
             ViewBag.deger2 = "sizden bir ricam var";
             ViewBag.deger3 = "merhaba kasım ayındayız";
+
+            return View();
+        }
+        public IActionResult Index7()
+        {
+
+            return View();
+        }
+        public IActionResult Index8()
+        {
+
+            return View();
+        }public IActionResult Index9() { 
         
-          return View();
+        return View();
         }
     }
 }
