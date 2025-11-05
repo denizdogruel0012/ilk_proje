@@ -1,0 +1,31 @@
+﻿
+@model List<ilk_proje.Models.Kitap>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index5</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Kitapad</th>
+            <th>Yazar</th>
+        </tr>
+        @foreach(var kt in Model)
+        {
+            <tr>
+                <td>@kt.Id</td>
+                <td>@kt.KitapAd</td>
+                <td>@kt.Yazar</td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
