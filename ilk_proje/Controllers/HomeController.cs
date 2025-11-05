@@ -31,5 +31,13 @@ namespace ilk_proje.Controllers
 
             return View(ktp);
         }
+        public IActionResult Index6() {
+
+            ViewBag.deger1 = "merhaba .net core dersleri devam ediyor";
+            ViewBag.deger2 = "sizden bir ricam var";
+            ViewBag.deger3 = "merhaba kasım ayındayız";
+        
+          return View();
+        }
     }
 }
